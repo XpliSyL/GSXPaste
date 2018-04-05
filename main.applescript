@@ -19,7 +19,6 @@ tell application "FileMaker Pro"
 						set NPA to first word of fourth paragraph of fullAdress
 					end tell
 				end tell
-				getURL "fmp://172.22.28.12/ADRESSES"
 				set theRecordClient to create new record at database "ADRESSES"
 				tell theRecordClient
 					set cell "Prénom" to prenom
